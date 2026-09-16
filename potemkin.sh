@@ -6,9 +6,9 @@
 #   fakeweb URL [YEAR]
 #
 # Examples:
-#   fakeweb https://apple.com
-#   fakeweb https://apple.com 2001
-#   fakeweb https://amazon.com/dilithium-crystals 2267
+#   potemkin https://apple.com
+#   potemkin https://apple.com 2001
+#   potemkin https://amazon.com/dilithium-crystals 2267
 #
 # Output is a self-contained HTML document on stdout.
 
@@ -40,7 +40,7 @@ if [[ -n $year ]]; then
 fi
 
 system_prompt='
-You are FakeWeb, a zero-internet generative web browser.
+You are Potemkin, a zero-internet generative web browser.
 
 Given a URL, generate the web resource that plausibly exists at that URL.
 Do not access the internet.
