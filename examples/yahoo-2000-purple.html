@@ -1,0 +1,602 @@
+Here's the full file with all blue tones swapped to a cohesive purple palette:
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yahoo! - Homepage</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+a {
+  color: #660099;
+  text-decoration: none;
+}
+a:hover {
+  color: #CC3300;
+  text-decoration: underline;
+}
+a:visited {
+  color: #663399;
+}
+#topbar {
+  background-color: #7C4DAB;
+  padding: 4px 10px;
+  font-size: 10px;
+  color: #ffffff;
+}
+#topbar a {
+  color: #ffffff;
+  font-size: 10px;
+}
+#header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 8px 10px;
+}
+#logo-table {
+  width: 100%;
+}
+.yahoo-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #6045AA;
+  letter-spacing: -1px;
+}
+.yahoo-logo .exclaim {
+  color: #CC3300;
+}
+#search-area {
+  text-align: right;
+  vertical-align: middle;
+}
+#search-box {
+  font-size: 11px;
+  padding: 3px;
+  border: 1px solid #999999;
+  width: 180px;
+}
+#search-btn {
+  font-size: 11px;
+  padding: 3px 10px;
+  background-color: #7C4DAB;
+  color: #ffffff;
+  border: 1px solid #4D2B77;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background-color: #9B6DC9;
+}
+#nav-bar {
+  background-color: #F0E8F7;
+  border-bottom: 1px solid #BBBBBB;
+  padding: 4px 10px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+#nav-bar a {
+  padding: 0 8px;
+  color: #660099;
+  font-size: 11px;
+  white-space: nowrap;
+}
+#nav-bar a:hover {
+  color: #CC3300;
+}
+#nav-sep {
+  color: #999999;
+}
+#ticker-bar {
+  background-color: #FFFFEE;
+  border-bottom: 1px solid #DDDD99;
+  padding: 3px 10px;
+  font-size: 10px;
+  color: #333333;
+  overflow: hidden;
+}
+#ticker-text {
+  float: left;
+}
+#ticker-arrow {
+  float: right;
+  cursor: pointer;
+  color: #660099;
+  font-size: 10px;
+}
+#main-content {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+#left-col {
+  width: 200px;
+  vertical-align: top;
+  padding: 6px 8px 6px 10px;
+}
+#center-col {
+  vertical-align: top;
+  padding: 6px 10px;
+}
+#right-col {
+  width: 190px;
+  vertical-align: top;
+  padding: 6px 10px;
+}
+.section-header {
+  background-color: #7C4DAB;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 6px;
+  margin-bottom: 0;
+}
+.section-body {
+  border: 1px solid #BBBBBB;
+  border-top: none;
+  padding: 6px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.headline {
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+.headline a {
+  font-size: 11px;
+}
+.sub-headline {
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+.sub-headline a {
+  font-size: 10px;
+  color: #333333;
+}
+.date-line {
+  font-size: 9px;
+  color: #888888;
+  margin-top: 2px;
+}
+.sport-row {
+  padding: 3px 0;
+  border-bottom: 1px dotted #DDDDDD;
+  font-size: 10px;
+}
+.sport-row:last-child {
+  border-bottom: none;
+}
+.team-name {
+  font-weight: bold;
+  color: #333333;
+}
+.score {
+  font-weight: bold;
+  color: #CC3300;
+}
+.stock-row {
+  padding: 2px 0;
+  border-bottom: 1px dotted #DDDDDD;
+  font-size: 10px;
+}
+.stock-sym {
+  font-weight: bold;
+  color: #333333;
+}
+.stock-up {
+  color: #CC0000;
+  font-weight: bold;
+}
+.stock-down {
+  color: #009933;
+  font-weight: bold;
+}
+.weather-temp {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7C4DAB;
+}
+.weather-desc {
+  font-size: 10px;
+  color: #666666;
+}
+#hot-links {
+  font-size: 10px;
+}
+#hot-links a {
+  display: block;
+  padding: 2px 0;
+  font-size: 10px;
+}
+.banner-ad {
+  width: 468px;
+  height: 60px;
+  background-color: #E8E8E8;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 60px;
+  font-size: 11px;
+  color: #999999;
+  margin-bottom: 10px;
+}
+.banner-ad-small {
+  width: 120px;
+  height: 60px;
+  background-color: #E8E8E8;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 60px;
+  font-size: 10px;
+  color: #999999;
+}
+#footer {
+  border-top: 1px solid #CCCCCC;
+  margin-top: 10px;
+  padding: 8px 10px;
+  font-size: 9px;
+  color: #666666;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+#footer a {
+  font-size: 9px;
+  color: #666666;
+}
+#footer a:hover {
+  color: #CC3300;
+}
+.footer-links {
+  margin-bottom: 4px;
+}
+.category-link {
+  font-size: 10px;
+  font-weight: bold;
+  color: #7C4DAB;
+}
+.chat-row {
+  font-size: 10px;
+  padding: 2px 0;
+  border-bottom: 1px dotted #EEEEEE;
+}
+.tag {
+  font-size: 9px;
+  color: #999999;
+  margin-left: 3px;
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span>Yahoo! <b>2000</b></span>
+  <span style="float:right;">
+    <a href="#">Mail</a> | <a href="#">Shopping</a> | <a href="#">Auctions</a> | <a href="#">Games</a> | <a href="#">Chat</a> | <a href="#">Help</a> | <a href="#">About</a> | <a href="#">Register</a>
+  </span>
+</div>
+
+<div id="header">
+  <table id="logo-table"><tr>
+    <td class="yahoo-logo">Yahoo<span class="exclaim">!</span></td>
+    <td id="search-area">
+      <input type="text" id="search-box" value="">
+      <input type="button" id="search-btn" value="Search">
+      <div style="font-size:9px; margin-top:3px;"><a href="#">Advanced Search</a> | <a href="#">Search this Category</a></div>
+    </td>
+  </tr></table>
+</div>
+
+<div id="nav-bar">
+  <a href="#">Home</a><span id="nav-sep">|</span>
+  <a href="#">News</a><span id="nav-sep">|</span>
+  <a href="#">Sports</a><span id="nav-sep">|</span>
+  <a href="#">Finance</a><span id="nav-sep">|</span>
+  <a href="#">Shopping</a><span id="nav-sep">|</span>
+  <a href="#">Entertainment</a><span id="nav-sep">|</span>
+  <a href="#">Health</a><span id="nav-sep">|</span>
+  <a href="#">Travel</a><span id="nav-sep">|</span>
+  <a href="#">Autos</a><span id="nav-sep">|</span>
+  <a href="#">Home &amp; Garden</a><span id="nav-sep">|</span>
+  <a href="#">Education</a><span id="nav-sep">|</span>
+  <a href="#">Local</a><span id="nav-sep">|</span>
+  <a href="#">Games</a><span id="nav-sep">|</span>
+  <a href="#">Auctions</a><span id="nav-sep">|</span>
+  <a href="#">Reference</a><span id="nav-sep">|</span>
+  <a href="#">Business</a><span id="nav-sep">|</span>
+  <a href="#">People</a>
+</div>
+
+<div id="ticker-bar">
+  <span id="ticker-text"><b>HEADLINES:</b> <a href="#">Y2K bug fears ease as midnight passes without major disruptions</a> | <a href="#">Stocks rally on optimism</a> | <a href="#">NBA Playoffs: Finals series begins</a> | <a href="#">NASA launches new satellite</a> | <a href="#">Dot-com IPOs continue strong run</a></span>
+  <span id="ticker-arrow">◄ ►</span>
+</div>
+
+<table id="main-content">
+<tr>
+<!-- LEFT COLUMN -->
+<td id="left-col">
+
+  <div class="section-header">Headlines</div>
+  <div class="section-body">
+    <div class="headline"><a href="#">Y2K: World Survives Without Major Glitches as Midnight Passes</a></div>
+    <div class="date-line">Today, 01:45 AM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Pentagon Confirms All Military Systems Operational at Turn of Century</a></div>
+    <div class="date-line">Today, 00:30 AM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Stock Markets Set for Special Trading Hours to Mark New Year</a></div>
+    <div class="date-line">Yesterday, 5:12 PM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Airlines Confirm Normal Operations; Some Minor Delays Reported</a></div>
+    <div class="date-line">Yesterday, 4:05 PM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Celebration Parties Planned in Cities Around the Globe</a></div>
+    <div class="date-line">Yesterday, 2:33 PM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Microsoft, Intel Join Y2K Monitoring Centers</a></div>
+    <div class="date-line">Yesterday, 1:18 PM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Banks Open Normally; ATM Systems Functioning Properly</a></div>
+    <div class="date-line">Yesterday, 11:44 AM ET</div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Headlines &raquo;</a></div>
+  </div>
+
+  <div class="section-header">Weather</div>
+  <div class="section-body" style="text-align:center;">
+    <div style="font-size:10px; color:#666666;">Washington, D.C.</div>
+    <div class="weather-temp" style="margin:4px 0;">72&deg;</div>
+    <div class="weather-desc">Sunny</div>
+    <div style="font-size:9px; color:#888888; margin-top:4px;">H: 78&deg; L: 58&deg;</div>
+    <div style="margin-top:6px; font-size:9px;"><a href="#">More Weather</a></div>
+  </div>
+
+  <div style="height:10px;"></div>
+
+  <div class="banner-ad-small" style="margin:0 auto; width:120px;">
+    <div style="padding-top:10px; font-size:9px; line-height:normal;"><b>AD</b><br>HotJobs.com<br>Find Your Job</div>
+  </div>
+
+</td>
+
+<!-- CENTER COLUMN -->
+<td id="center-col">
+
+  <div class="banner-ad">
+    <span><b>Advertisement</b><br><span style="font-size:10px;">[ 468x60 Banner - Excite Search Engine ]</span></span>
+  </div>
+
+  <div class="section-header">Today's Top Stories</div>
+  <div class="section-body">
+    <div class="headline"><a href="#" style="font-size:13px; font-weight:bold;">A New Era Begins: 2000 Arrives Without Y2K Chaos</a></div>
+    <div style="font-size:10px; color:#555555; margin-bottom:8px; line-height:1.4;">
+      Millions of people around the world gathered as the clock struck midnight on New Year's Eve, watching to see if the widely-feared computer date-change bug would trigger catastrophic failures. In what is being called a major relief, the world appeared to make it through the turn of the century with only minor, isolated incidents reported.
+    </div>
+    <div class="headline"><a href="#">Clint Eastwood Announces New Directorial Project for 2000</a></div>
+    <div class="date-line">Today, 9:15 AM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">Federal Reserve Holds Interest Rates Steady</a></div>
+    <div class="date-line">Today, 8:30 AM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">NBA Finals: Lakers vs. Pacers Tips Off Tonight</a></div>
+    <div class="date-line">Today, 7:45 AM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">E-commerce Sales Expected to Break Records This Holiday Season</a></div>
+    <div class="date-line">Yesterday, 6:22 PM ET</div>
+    <div class="headline" style="margin-top:8px;"><a href="#">CERN Scientists Report New Particle Physics Discovery</a></div>
+    <div class="date-line">Yesterday, 3:50 PM ET</div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Top Stories &raquo;</a></div>
+  </div>
+
+  <div class="section-header">Business &amp; Finance</div>
+  <div class="section-body">
+    <div class="headline"><a href="#">Wall Street Opens Higher; Dow Gains 45 Points on New Year Optimism</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Cisco Systems Announces Record Quarterly Earnings</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">eBay Reports Black Friday Set New Transaction Records</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Oil Prices Steady at $12.35 per Barrel</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Amazon.com Opens New Fulfillment Centers in Three States</a></div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Business News &raquo;</a></div>
+  </div>
+
+  <div class="section-header">Entertainment</div>
+  <div class="section-body">
+    <div class="headline"><a href="#">"Gladiator" Sweeps Early Academy Award Predictions</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Britney Spears New Album Tops Billboard Pre-Release Chart</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Hollywood Blockbuster "Mission: Impossible 2" Breaks Opening Weekend Records</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Grammys Nominations Announced; Eminem Leads with 9 Nods</a></div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Entertainment &raquo;</a></div>
+  </div>
+
+  <div class="section-header">Technology</div>
+  <div class="section-body">
+    <div class="headline"><a href="#">Intel Unveils New Pentium 4 Processor at 1.5 GHz</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Broadband Adoption Reaches 10% of U.S. Households</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Linux Gains Momentum in Corporate Server Markets</a></div>
+    <div class="headline" style="margin-top:6px;"><a href="#">Apple Announces New iMac Model in Five Bold Colors</a></div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Tech News &raquo;</a></div>
+  </div>
+
+</td>
+
+<!-- RIGHT COLUMN -->
+<td id="right-col">
+
+  <div class="section-header">Sports Scores</div>
+  <div class="section-body">
+    <div style="font-size:9px; color:#666666; margin-bottom:4px; font-weight:bold;">NBA - Playoffs</div>
+    <div class="sport-row">
+      <span class="team-name">LAL</span> 89 - 84 <span class="team-name">IND</span>
+    </div>
+    <div class="sport-row">
+      <span class="team-name">SAS</span> 92 - 88 <span class="team-name">ORL</span>
+    </div>
+    <div class="sport-row">
+      <span class="team-name">NYK</span> 78 - 85 <span class="team-name">CHA</span>
+    </div>
+    <div style="font-size:9px; color:#666666; margin:6px 0 4px; font-weight:bold;">MLB - Season Over</div>
+    <div class="sport-row">
+      <span class="team-name">NYM</span> 94-68 (1st NL East)
+    </div>
+    <div class="sport-row">
+      <span class="team-name">NYY</span> 98-64 (1st AL East)
+    </div>
+    <div style="font-size:9px; color:#666666; margin:6px 0 4px; font-weight:bold;">NFL</div>
+    <div class="sport-row">
+      <span class="team-name">RAV</span> 13 - 10 <span class="team-name">DEN</span>
+    </div>
+    <div class="sport-row">
+      <span class="team-name">TAM</span> 24 - 17 <span class="team-name">STL</span>
+    </div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Sports &raquo;</a></div>
+  </div>
+
+  <div class="section-header">Stock Watch</div>
+  <div class="section-body">
+    <div class="stock-row">
+      <span class="stock-sym">MSFT</span> &nbsp;$78.42 <span class="stock-up">+1.85</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">INTC</span> &nbsp;$34.17 <span class="stock-up">+0.62</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">CSCO</span> &nbsp;$82.33 <span class="stock-up">+2.14</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">YHOO</span> &nbsp;$14.87 <span class="stock-up">+0.43</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">EBAY</span> &nbsp;$25.61 <span class="stock-down">-0.32</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">AMZN</span> &nbsp;$112.40 <span class="stock-up">+4.78</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">GE</span> &nbsp;$32.05 <span class="stock-up">+0.11</span>
+    </div>
+    <div class="stock-row">
+      <span class="stock-sym">JPM</span> &nbsp;$12.84 <span class="stock-down">-0.15</span>
+    </div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">More Stocks &raquo;</a></div>
+  </div>
+
+  <div style="height:8px;"></div>
+
+  <div class="section-header">Hot Links</div>
+  <div class="section-body">
+    <div id="hot-links">
+      <a href="#">1. Y2K Celebration Photos</a>
+      <a href="#">2. New Year's Resolutions</a>
+      <a href="#">3. NBA Finals Schedule</a>
+      <a href="#">4. Best of 1999 Awards</a>
+      <a href="#">5. Stock Market Summary</a>
+      <a href="#">6. Movie Reviews</a>
+      <a href="#">7. Recipe of the Day</a>
+      <a href="#">8. Joke of the Day</a>
+      <a href="#">9. Horoscope Readings</a>
+      <a href="#">10. Top Auctions</a>
+    </div>
+  </div>
+
+  <div style="height:8px;"></div>
+
+  <div class="section-header">Chat Rooms</div>
+  <div class="section-body">
+    <div class="chat-row"><a href="#">General Chat</a> <span class="tag">[1,247]</span></div>
+    <div class="chat-row"><a href="#">Y2K Aftermath</a> <span class="tag">[892]</span></div>
+    <div class="chat-row"><a href="#">Sports Talk</a> <span class="tag">[634]</span></div>
+    <div class="chat-row"><a href="#">Tech Support</a> <span class="tag">[421]</span></div>
+    <div class="chat-row"><a href="#">Music Fans</a> <span class="tag">[387]</span></div>
+    <div class="chat-row"><a href="#">Movie Talk</a> <span class="tag">[312]</span></div>
+    <div style="text-align:right; margin-top:6px;"><a href="#">All Chat Rooms &raquo;</a></div>
+  </div>
+
+  <div style="height:8px;"></div>
+
+  <div class="banner-ad-small">
+    <div style="padding-top:10px; font-size:9px; line-height:normal;"><b>AD</b><br>GeoCities<br>Home of the Internet</div>
+  </div>
+
+</td>
+</tr>
+</table>
+
+<div id="footer">
+  <div class="footer-links">
+    <a href="#">About Yahoo!</a> | <a href="#">Careers</a> | <a href="#">Advertising</a> | <a href="#">Help</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">User Agreement</a> | <a href="#">Site Map</a>
+  </div>
+  <div class="footer-links">
+    <a href="#">News</a> | <a href="#">Sports</a> | <a href="#">Finance</a> | <a href="#">Shopping</a> | <a href="#">Entertainment</a> | <a href="#">Health</a> | <a href="#">Travel</a> | <a href="#">Autos</a> | <a href="#">Home &amp; Garden</a> | <a href="#">Education</a> | <a href="#">Games</a> | <a href="#">Auctions</a>
+  </div>
+  <div style="margin-top:6px;">
+    &copy; 2000 Yahoo! Inc. All Rights Reserved. | This page is best viewed with 800x600 or higher resolution.
+  </div>
+  <div style="margin-top:4px; font-size:8px; color:#AAAAAA;">
+    Yahoo! is a registered trademark of Yahoo! Inc.
+  </div>
+</div>
+
+<script>
+// Simple ticker animation
+var tickerText = document.getElementById('ticker-text');
+var originalText = tickerText.innerHTML;
+var pos = 0;
+var animating = false;
+
+var arrow = document.getElementById('ticker-arrow');
+arrow.onclick = function() {
+  if (animating) return;
+  animating = true;
+  var scrollLeft = 0;
+  var interval = setInterval(function() {
+    scrollLeft += 2;
+    tickerText.innerHTML = originalText.substring(scrollLeft % originalText.innerHTML.length) + originalText.substring(0, (scrollLeft % originalText.innerHTML.length));
+    if (scrollLeft >= originalText.innerHTML.length) {
+      clearInterval(interval);
+      tickerText.innerHTML = originalText;
+      animating = false;
+    }
+  }, 50);
+};
+
+// Search box interaction
+var searchBox = document.getElementById('search-box');
+var searchBtn = document.getElementById('search-btn');
+searchBtn.onclick = function() {
+  var q = searchBox.value;
+  if (q) {
+    alert('Search results for: ' + q + '\n\n(This is a simulated 2000 Yahoo! page.)');
+  }
+};
+searchBox.onkeydown = function(e) {
+  if (e.key === 'Enter') {
+    searchBtn.onclick();
+  }
+};
+
+// Highlight nav on hover
+var navLinks = document.querySelectorAll('#nav-bar a');
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].onmouseover = function() {
+    this.style.color = '#CC3300';
+    this.style.textDecoration = 'underline';
+  };
+  navLinks[i].onmouseout = function() {
+    this.style.color = '#660099';
+    this.style.textDecoration = 'none';
+  };
+}
+</script>
+
+</body>
+</html>
+```
+
+**Color mapping used (blue → purple):**
+
+| Role | Before (blue) | After (purple) |
+|---|---|---|
+| Top bar / section headers / search btn / weather temp / category links | `#5580BF` | `#7C4DAB` |
+| Links (default) / nav links / ticker arrow | `#003399` | `#660099` |
+| Search button border | `#335577` | `#4D2B77` |
+| Search button hover | `#6699CC` | `#9B6DC9` |
+| Nav bar background | `#E8EDF5` | `#F0E8F7` |
+| Logo | `#6045AA` | *(unchanged — already purple)* |
+| Visited links | `#663399` | *(unchanged — already purple)* |
+
+The JS `onmouseout` handler that resets nav link color was also updated from `#003399` to `#660099` to stay consistent.
